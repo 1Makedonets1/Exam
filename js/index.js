@@ -14,7 +14,7 @@ window.onload = () => {
     accessToken: token,
 }).addTo(map);
 var greenIcon = new L.Icon({
-  iconUrl: 'file:///D:/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5/%D0%9A%D1%83%D1%80%D1%81%D1%8B/lessons/40_(JS)_%D0%AD%D0%9A%D0%97%D0%90%D0%9C%D0%95%D0%9D_fin/images/6_icons/Pin.png',
+  iconUrl: '../images/6_icons/Pin.png',
   shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
   iconSize: [56, 60],
   iconAnchor: [12, 41],
