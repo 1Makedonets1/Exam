@@ -1,0 +1,143 @@
+@import "../node_modules/normalize-scss/sass/normalize/import-now";
+@import "_var.scss";
+@import "_mixins.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1172px;
+}
+
+.header {
+  background-image: url(../images/1_header/Header_BG.png);
+  background-position: center;
+  background-size: cover;
+  mask-repeat: no-repeat;
+  width: 100vw;
+
+  @include e(title) {
+    display: flex;
+    flex-direction: column;
+    width: 948px;
+    margin: auto;
+    padding-top: 406px;
+    padding-bottom: 510px;
+    text-align: center;
+    color: $wite-color-text;
+
+    @include m(title) {
+      font-size: 72px;
+      padding: 0;
+    }
+    @include m(text) {
+      font-size: 30px;
+      padding: 0;
+    }
+  }
+}
+
+#map {
+  height: 900px;
+  z-index: 1;
+}
+
+.addRight{
+    right: -258px;
+}
+
+.nullRight {
+    right: 0;
+}
+
+.contacts {
+    width: 100vw;
+  position: relative;
+  overflow: hidden;
+
+  @include e(title) {
+      padding-top: 50px;
+      color: $wite-color-text;
+      text-align: center;
+      font-size: 36px;
+  }
+
+  @include e(address) {
+    position: absolute;
+    width: 350px;
+    height: 92px;;
+    top: 365px;
+    z-index: 2;
+    border: solid 1px #000;
+
+    @include m(icon) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 92px;
+      height: 92px;
+      background: $main-color;
+      left: 0;
+      top: 0;
+      border: none;
+    }
+
+    @include m(text) {
+        color: $wite-color-text;
+    }
+  }
+
+  @include e(phone) {
+    position: absolute;
+    width: 350px;
+    height: 92px;
+    top: 455px;
+    z-index: 2;
+    border: solid 1px #000;
+
+    @include m(icon) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 92px;
+      height: 92px;
+      background: $main-color;
+      left: 0;
+      top: 0;
+      border: none;
+    }
+
+    @include m(text) {
+        color: $wite-color-text;
+    }
+  }
+
+  @include e(wrap) {
+      position: absolute;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+
+  @include e(form) {
+      @include e(inputs) {
+          display: flex;
+      }
+
+      @include e(textarea) {
+          display: flex;
+      }
+  }
+
+  @include e(button) {
+      width: 295px;
+      height: 70px;
+      margin: auto;
+      background: $main-color;
+      color: $wite-color-text;
+  }
+ 
+}
